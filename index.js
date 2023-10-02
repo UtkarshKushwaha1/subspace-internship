@@ -5,13 +5,13 @@ const app = express();
 const path = require('path');
 
 
-// app.get("/", middleware, (req, res) => {
-//   res.send(
-//     `REQ: ${req.body.length}, ${req.body.blog.title} | ${
-//       req.body.privacyBlogs
-//     } | ${req.body.unique.map((v) => `${v} | `)}`
-//   );
-// });
+app.get("/", middleware, (req, res) => {
+  res.send(
+    `REQ: ${req.body.length}, ${req.body.blog.title} | ${
+      req.body.privacyBlogs
+    } | ${req.body.unique.map((v) => `${v} | `)}`
+  );
+});
 
 
 
